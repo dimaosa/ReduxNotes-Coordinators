@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C43AE2E2302D9B400381356 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43AE2C2302D9B400381356 /* ContainerViewController.swift */; };
+		6C43AE2F2302D9B400381356 /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C43AE2D2302D9B400381356 /* ContainerViewController.xib */; };
+		6C43AE312302DC1800381356 /* MenuScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43AE302302DC1800381356 /* MenuScreenFactory.swift */; };
+		6C43AE372302E23A00381356 /* AllNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43AE352302E23A00381356 /* AllNotesTableViewController.swift */; };
+		6C43AE382302E23A00381356 /* AllNotesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C43AE362302E23A00381356 /* AllNotesTableViewController.xib */; };
+		6C43AE3B2302E4AC00381356 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43AE392302E4AC00381356 /* NoteTableViewCell.swift */; };
+		6C43AE3C2302E4AC00381356 /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C43AE3A2302E4AC00381356 /* NoteTableViewCell.xib */; };
+		6C43AE3F2302EC4A00381356 /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C43AE3D2302EC4A00381356 /* NoteDetailsViewController.swift */; };
+		6C43AE402302EC4A00381356 /* NoteDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C43AE3E2302EC4A00381356 /* NoteDetailsViewController.xib */; };
+		6CAB1F4B230155AB007F7333 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB1F4A230155AB007F7333 /* AppCoordinator.swift */; };
+		6CAB1F4E2301560B007F7333 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB1F4D2301560B007F7333 /* Coordinator.swift */; };
+		6CAB1F50230158E6007F7333 /* ContainerScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB1F4F230158E6007F7333 /* ContainerScreenFactory.swift */; };
+		6CAB1F5523017EBB007F7333 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB1F5423017EBB007F7333 /* MenuPresenter.swift */; };
+		6CAB1F5C23017F35007F7333 /* MenuTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB1F5A23017F35007F7333 /* MenuTabBarViewController.swift */; };
+		6CAB1F5D23017F35007F7333 /* MenuTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CAB1F5B23017F35007F7333 /* MenuTabBarViewController.xib */; };
+		6CAB1F6123019321007F7333 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB1F6023019321007F7333 /* SplashViewController.swift */; };
+		6CAB1F65230193FA007F7333 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB1F64230193FA007F7333 /* MenuCoordinator.swift */; };
+		6CAB1F692301A474007F7333 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB1F682301A474007F7333 /* Middleware.swift */; };
+		6CFFF5B42303FA0E007F60DC /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFF5B22303FA0E007F60DC /* NewNoteViewController.swift */; };
+		6CFFF5B52303FA0E007F60DC /* NewNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFFF5B32303FA0E007F60DC /* NewNoteViewController.xib */; };
+		6CFFF5B9230439AA007F60DC /* Log+Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFF5B8230439AA007F60DC /* Log+Middleware.swift */; };
+		6CFFF5BC23043B74007F60DC /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFF5BB23043B74007F60DC /* FirebaseController.swift */; };
+		6CFFF5BE2304566F007F60DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CFFF5BD2304566F007F60DC /* GoogleService-Info.plist */; };
+		6CFFF5C223054EC9007F60DC /* EditNotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFF5C123054EC9007F60DC /* EditNotePresenter.swift */; };
+		6CFFF5C42305654F007F60DC /* LocationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFF5C32305654F007F60DC /* LocationState.swift */; };
+		6CFFF5C6230565FA007F60DC /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFF5C5230565FA007F60DC /* LocationController.swift */; };
+		6CFFF5C82305660E007F60DC /* LocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFF5C72305660E007F60DC /* LocationPresenter.swift */; };
+		6CFFF5CC23056996007F60DC /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFF5CB23056996007F60DC /* ControllerFactory.swift */; };
+		6CFFF5D023057D4F007F60DC /* FirebasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFF5CF23057D4F007F60DC /* FirebasePresenter.swift */; };
+		8B64A1DD99DBF3C7C1537364 /* Pods_ReduxNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58961785A35C7EC18F5D4AB /* Pods_ReduxNotes.framework */; };
+		DE174BC620DA602100941C63 /* NewNotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE174BC520DA602100941C63 /* NewNotePresenter.swift */; };
+		DE174BC820DA60A600941C63 /* NewNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE174BC720DA60A600941C63 /* NewNote.swift */; };
+		DE1AD32C20D6A02B00A884F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD32B20D6A02B00A884F0 /* AppDelegate.swift */; };
+		DE1AD33120D6A02B00A884F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1AD32F20D6A02B00A884F0 /* Main.storyboard */; };
+		DE1AD33320D6A02B00A884F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1AD33220D6A02B00A884F0 /* Assets.xcassets */; };
+		DE1AD33620D6A02B00A884F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1AD33420D6A02B00A884F0 /* LaunchScreen.storyboard */; };
+		DE1AD34820D6FEFC00A884F0 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD34420D6FEFC00A884F0 /* Command.swift */; };
+		DE1AD34920D6FEFC00A884F0 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD34520D6FEFC00A884F0 /* Store.swift */; };
+		DE1AD34A20D6FEFC00A884F0 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD34620D6FEFC00A884F0 /* Action.swift */; };
+		DE1AD34D20D6FF3700A884F0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD34C20D6FF3700A884F0 /* State.swift */; };
+		DE1AD34F20D6FF7000A884F0 /* AllNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD34E20D6FF7000A884F0 /* AllNotes.swift */; };
+		DE1AD35D20D7F7AA00A884F0 /* PersonalNotesTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD35C20D7F7AA00A884F0 /* PersonalNotesTablePresenter.swift */; };
+		DE1AD35F20D7FA2100A884F0 /* CommonNotesTablePreseneter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD35E20D7FA2100A884F0 /* CommonNotesTablePreseneter.swift */; };
+		DE1AD36920D9378200A884F0 /* NoteDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1AD36820D9378200A884F0 /* NoteDetailsPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C43AE2C2302D9B400381356 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		6C43AE2D2302D9B400381356 /* ContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
+		6C43AE302302DC1800381356 /* MenuScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenFactory.swift; sourceTree = "<group>"; };
+		6C43AE352302E23A00381356 /* AllNotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNotesTableViewController.swift; sourceTree = "<group>"; };
+		6C43AE362302E23A00381356 /* AllNotesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllNotesTableViewController.xib; sourceTree = "<group>"; };
+		6C43AE392302E4AC00381356 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		6C43AE3A2302E4AC00381356 /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
+		6C43AE3D2302EC4A00381356 /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
+		6C43AE3E2302EC4A00381356 /* NoteDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailsViewController.xib; sourceTree = "<group>"; };
+		6CAB1F4A230155AB007F7333 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6CAB1F4D2301560B007F7333 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6CAB1F4F230158E6007F7333 /* ContainerScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerScreenFactory.swift; sourceTree = "<group>"; };
+		6CAB1F5423017EBB007F7333 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		6CAB1F5A23017F35007F7333 /* MenuTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarViewController.swift; sourceTree = "<group>"; };
+		6CAB1F5B23017F35007F7333 /* MenuTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTabBarViewController.xib; sourceTree = "<group>"; };
+		6CAB1F6023019321007F7333 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		6CAB1F64230193FA007F7333 /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
+		6CAB1F682301A474007F7333 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		6CFFF5B22303FA0E007F60DC /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		6CFFF5B32303FA0E007F60DC /* NewNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewNoteViewController.xib; sourceTree = "<group>"; };
+		6CFFF5B8230439AA007F60DC /* Log+Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Log+Middleware.swift"; sourceTree = "<group>"; };
+		6CFFF5BB23043B74007F60DC /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		6CFFF5BD2304566F007F60DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6CFFF5C123054EC9007F60DC /* EditNotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotePresenter.swift; sourceTree = "<group>"; };
+		6CFFF5C32305654F007F60DC /* LocationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationState.swift; sourceTree = "<group>"; };
+		6CFFF5C5230565FA007F60DC /* LocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		6CFFF5C72305660E007F60DC /* LocationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPresenter.swift; sourceTree = "<group>"; };
+		6CFFF5CB23056996007F60DC /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		6CFFF5CF23057D4F007F60DC /* FirebasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePresenter.swift; sourceTree = "<group>"; };
+		D58961785A35C7EC18F5D4AB /* Pods_ReduxNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE174BC520DA602100941C63 /* NewNotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotePresenter.swift; sourceTree = "<group>"; };
+		DE174BC720DA60A600941C63 /* NewNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNote.swift; sourceTree = "<group>"; };
+		DE1AD32820D6A02B00A884F0 /* ReduxNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1AD32B20D6A02B00A884F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE1AD33020D6A02B00A884F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE1AD33220D6A02B00A884F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE1AD33520D6A02B00A884F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE1AD33720D6A02B00A884F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1AD34420D6FEFC00A884F0 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		DE1AD34520D6FEFC00A884F0 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		DE1AD34620D6FEFC00A884F0 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		DE1AD34C20D6FF3700A884F0 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		DE1AD34E20D6FF7000A884F0 /* AllNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNotes.swift; sourceTree = "<group>"; };
+		DE1AD35C20D7F7AA00A884F0 /* PersonalNotesTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalNotesTablePresenter.swift; sourceTree = "<group>"; };
+		DE1AD35E20D7FA2100A884F0 /* CommonNotesTablePreseneter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonNotesTablePreseneter.swift; sourceTree = "<group>"; };
+		DE1AD36820D9378200A884F0 /* NoteDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsPresenter.swift; sourceTree = "<group>"; };
+		E44358C729EF128FD9C575CD /* Pods-ReduxNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxNotes/Pods-ReduxNotes.release.xcconfig"; sourceTree = "<group>"; };
+		EAE3BE7137E4E9F6D200A2FC /* Pods-ReduxNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReduxNotes/Pods-ReduxNotes.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE1AD32520D6A02B00A884F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B64A1DD99DBF3C7C1537364 /* Pods_ReduxNotes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F00BA4CA0B98D95CAF34E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D58961785A35C7EC18F5D4AB /* Pods_ReduxNotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C43AE322302DCB200381356 /* ContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C43AE2C2302D9B400381356 /* ContainerViewController.swift */,
+				6C43AE2D2302D9B400381356 /* ContainerViewController.xib */,
+			);
+			path = ContainerViewController;
+			sourceTree = "<group>";
+		};
+		6CAB1F4C230155B2007F7333 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6CAB1F4A230155AB007F7333 /* AppCoordinator.swift */,
+				6CAB1F4F230158E6007F7333 /* ContainerScreenFactory.swift */,
+				6CAB1F632301939A007F7333 /* Menu */,
+				6C43AE322302DCB200381356 /* ContainerViewController */,
+				6CAB1F5323017E8B007F7333 /* MenuViewController */,
+				6CAB1F6223019327007F7333 /* SplashViewController */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6CAB1F5323017E8B007F7333 /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6CAB1F5423017EBB007F7333 /* MenuPresenter.swift */,
+				6CAB1F5A23017F35007F7333 /* MenuTabBarViewController.swift */,
+				6CAB1F5B23017F35007F7333 /* MenuTabBarViewController.xib */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		6CAB1F6223019327007F7333 /* SplashViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6CAB1F6023019321007F7333 /* SplashViewController.swift */,
+			);
+			path = SplashViewController;
+			sourceTree = "<group>";
+		};
+		6CAB1F632301939A007F7333 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				6CAB1F64230193FA007F7333 /* MenuCoordinator.swift */,
+				6C43AE302302DC1800381356 /* MenuScreenFactory.swift */,
+				DE1AD36520D936F900A884F0 /* NoteDetailsViewController */,
+				DE1AD36020D8F44000A884F0 /* NewNoteViewController */,
+				DE1AD35920D7E85400A884F0 /* NotesTableViewController */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		6CFFF5BA230439AE007F60DC /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				6CFFF5B8230439AA007F60DC /* Log+Middleware.swift */,
+			);
+			path = Middlewares;
+			sourceTree = "<group>";
+		};
+		6CFFF5C923056617007F60DC /* LocationController */ = {
+			isa = PBXGroup;
+			children = (
+				6CFFF5C5230565FA007F60DC /* LocationController.swift */,
+				6CFFF5C72305660E007F60DC /* LocationPresenter.swift */,
+			);
+			path = LocationController;
+			sourceTree = "<group>";
+		};
+		6CFFF5CA2305663E007F60DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CFFF5D1230587B2007F60DC /* FirebaseController */,
+				6CFFF5C923056617007F60DC /* LocationController */,
+				6CFFF5CB23056996007F60DC /* ControllerFactory.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6CFFF5D1230587B2007F60DC /* FirebaseController */ = {
+			isa = PBXGroup;
+			children = (
+				6CFFF5BB23043B74007F60DC /* FirebaseController.swift */,
+				6CFFF5CF23057D4F007F60DC /* FirebasePresenter.swift */,
+			);
+			path = FirebaseController;
+			sourceTree = "<group>";
+		};
+		9E58FBC9742C00C9117B8DF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAE3BE7137E4E9F6D200A2FC /* Pods-ReduxNotes.debug.xcconfig */,
+				E44358C729EF128FD9C575CD /* Pods-ReduxNotes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE1AD31F20D6A02B00A884F0 = {
+			isa = PBXGroup;
+			children = (
+				DE1AD34220D6FEFC00A884F0 /* Abstractions */,
+				DE1AD32A20D6A02B00A884F0 /* ReduxNotes */,
+				DE1AD32920D6A02B00A884F0 /* Products */,
+				9E58FBC9742C00C9117B8DF9 /* Pods */,
+				4F00BA4CA0B98D95CAF34E6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE1AD32920D6A02B00A884F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE1AD32820D6A02B00A884F0 /* ReduxNotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE1AD32A20D6A02B00A884F0 /* ReduxNotes */ = {
+			isa = PBXGroup;
+			children = (
+				DE1AD34B20D6FF0E00A884F0 /* State */,
+				6CFFF5BA230439AE007F60DC /* Middlewares */,
+				6CFFF5CA2305663E007F60DC /* Controllers */,
+				6CAB1F4C230155B2007F7333 /* Coordinators */,
+				DE1AD32B20D6A02B00A884F0 /* AppDelegate.swift */,
+				DE1AD32F20D6A02B00A884F0 /* Main.storyboard */,
+				DE1AD33220D6A02B00A884F0 /* Assets.xcassets */,
+				DE1AD33420D6A02B00A884F0 /* LaunchScreen.storyboard */,
+				6CFFF5BD2304566F007F60DC /* GoogleService-Info.plist */,
+				DE1AD33720D6A02B00A884F0 /* Info.plist */,
+			);
+			path = ReduxNotes;
+			sourceTree = "<group>";
+		};
+		DE1AD34220D6FEFC00A884F0 /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				DE1AD34420D6FEFC00A884F0 /* Command.swift */,
+				DE1AD34520D6FEFC00A884F0 /* Store.swift */,
+				6CAB1F682301A474007F7333 /* Middleware.swift */,
+				DE1AD34620D6FEFC00A884F0 /* Action.swift */,
+				6CAB1F4D2301560B007F7333 /* Coordinator.swift */,
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		DE1AD34B20D6FF0E00A884F0 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DE1AD34C20D6FF3700A884F0 /* State.swift */,
+				DE1AD34E20D6FF7000A884F0 /* AllNotes.swift */,
+				DE174BC720DA60A600941C63 /* NewNote.swift */,
+				6CFFF5C32305654F007F60DC /* LocationState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DE1AD35920D7E85400A884F0 /* NotesTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C43AE352302E23A00381356 /* AllNotesTableViewController.swift */,
+				6C43AE392302E4AC00381356 /* NoteTableViewCell.swift */,
+				6C43AE3A2302E4AC00381356 /* NoteTableViewCell.xib */,
+				6C43AE362302E23A00381356 /* AllNotesTableViewController.xib */,
+				DE1AD35C20D7F7AA00A884F0 /* PersonalNotesTablePresenter.swift */,
+				DE1AD35E20D7FA2100A884F0 /* CommonNotesTablePreseneter.swift */,
+			);
+			path = NotesTableViewController;
+			sourceTree = "<group>";
+		};
+		DE1AD36020D8F44000A884F0 /* NewNoteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE174BC520DA602100941C63 /* NewNotePresenter.swift */,
+				6CFFF5C123054EC9007F60DC /* EditNotePresenter.swift */,
+				6CFFF5B22303FA0E007F60DC /* NewNoteViewController.swift */,
+				6CFFF5B32303FA0E007F60DC /* NewNoteViewController.xib */,
+			);
+			path = NewNoteViewController;
+			sourceTree = "<group>";
+		};
+		DE1AD36520D936F900A884F0 /* NoteDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE1AD36820D9378200A884F0 /* NoteDetailsPresenter.swift */,
+				6C43AE3D2302EC4A00381356 /* NoteDetailsViewController.swift */,
+				6C43AE3E2302EC4A00381356 /* NoteDetailsViewController.xib */,
+			);
+			path = NoteDetailsViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE1AD32720D6A02B00A884F0 /* ReduxNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE1AD33A20D6A02B00A884F0 /* Build configuration list for PBXNativeTarget "ReduxNotes" */;
+			buildPhases = (
+				52A661B25AD6507EF06B45E2 /* [CP] Check Pods Manifest.lock */,
+				DE1AD32420D6A02B00A884F0 /* Sources */,
+				DE1AD32520D6A02B00A884F0 /* Frameworks */,
+				DE1AD32620D6A02B00A884F0 /* Resources */,
+				392E356922F9071667951D62 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReduxNotes;
+			productName = ReduxNotes;
+			productReference = DE1AD32820D6A02B00A884F0 /* ReduxNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE1AD32020D6A02B00A884F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Alexey Demedeckiy";
+				TargetAttributes = {
+					DE1AD32720D6A02B00A884F0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DE1AD32320D6A02B00A884F0 /* Build configuration list for PBXProject "ReduxNotes" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE1AD31F20D6A02B00A884F0;
+			productRefGroup = DE1AD32920D6A02B00A884F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE1AD32720D6A02B00A884F0 /* ReduxNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE1AD32620D6A02B00A884F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFFF5BE2304566F007F60DC /* GoogleService-Info.plist in Resources */,
+				DE1AD33620D6A02B00A884F0 /* LaunchScreen.storyboard in Resources */,
+				6C43AE402302EC4A00381356 /* NoteDetailsViewController.xib in Resources */,
+				6C43AE382302E23A00381356 /* AllNotesTableViewController.xib in Resources */,
+				6CAB1F5D23017F35007F7333 /* MenuTabBarViewController.xib in Resources */,
+				6C43AE2F2302D9B400381356 /* ContainerViewController.xib in Resources */,
+				6C43AE3C2302E4AC00381356 /* NoteTableViewCell.xib in Resources */,
+				DE1AD33320D6A02B00A884F0 /* Assets.xcassets in Resources */,
+				DE1AD33120D6A02B00A884F0 /* Main.storyboard in Resources */,
+				6CFFF5B52303FA0E007F60DC /* NewNoteViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		392E356922F9071667951D62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReduxNotes/Pods-ReduxNotes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduxNotes/Pods-ReduxNotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52A661B25AD6507EF06B45E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReduxNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE1AD32420D6A02B00A884F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAB1F6123019321007F7333 /* SplashViewController.swift in Sources */,
+				DE1AD34920D6FEFC00A884F0 /* Store.swift in Sources */,
+				DE1AD34A20D6FEFC00A884F0 /* Action.swift in Sources */,
+				6CFFF5C82305660E007F60DC /* LocationPresenter.swift in Sources */,
+				6CAB1F65230193FA007F7333 /* MenuCoordinator.swift in Sources */,
+				DE1AD36920D9378200A884F0 /* NoteDetailsPresenter.swift in Sources */,
+				6CFFF5B42303FA0E007F60DC /* NewNoteViewController.swift in Sources */,
+				6CFFF5B9230439AA007F60DC /* Log+Middleware.swift in Sources */,
+				DE1AD34F20D6FF7000A884F0 /* AllNotes.swift in Sources */,
+				6CAB1F4B230155AB007F7333 /* AppCoordinator.swift in Sources */,
+				6CFFF5C42305654F007F60DC /* LocationState.swift in Sources */,
+				6CFFF5CC23056996007F60DC /* ControllerFactory.swift in Sources */,
+				6C43AE372302E23A00381356 /* AllNotesTableViewController.swift in Sources */,
+				DE174BC620DA602100941C63 /* NewNotePresenter.swift in Sources */,
+				6CFFF5D023057D4F007F60DC /* FirebasePresenter.swift in Sources */,
+				DE174BC820DA60A600941C63 /* NewNote.swift in Sources */,
+				DE1AD32C20D6A02B00A884F0 /* AppDelegate.swift in Sources */,
+				6CFFF5C223054EC9007F60DC /* EditNotePresenter.swift in Sources */,
+				6CAB1F5C23017F35007F7333 /* MenuTabBarViewController.swift in Sources */,
+				DE1AD34D20D6FF3700A884F0 /* State.swift in Sources */,
+				DE1AD35F20D7FA2100A884F0 /* CommonNotesTablePreseneter.swift in Sources */,
+				DE1AD35D20D7F7AA00A884F0 /* PersonalNotesTablePresenter.swift in Sources */,
+				6CAB1F50230158E6007F7333 /* ContainerScreenFactory.swift in Sources */,
+				6CAB1F692301A474007F7333 /* Middleware.swift in Sources */,
+				6CFFF5BC23043B74007F60DC /* FirebaseController.swift in Sources */,
+				6C43AE2E2302D9B400381356 /* ContainerViewController.swift in Sources */,
+				DE1AD34820D6FEFC00A884F0 /* Command.swift in Sources */,
+				6CAB1F4E2301560B007F7333 /* Coordinator.swift in Sources */,
+				6CFFF5C6230565FA007F60DC /* LocationController.swift in Sources */,
+				6C43AE3F2302EC4A00381356 /* NoteDetailsViewController.swift in Sources */,
+				6CAB1F5523017EBB007F7333 /* MenuPresenter.swift in Sources */,
+				6C43AE3B2302E4AC00381356 /* NoteTableViewCell.swift in Sources */,
+				6C43AE312302DC1800381356 /* MenuScreenFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE1AD32F20D6A02B00A884F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE1AD33020D6A02B00A884F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE1AD33420D6A02B00A884F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE1AD33520D6A02B00A884F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE1AD33820D6A02B00A884F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE1AD33920D6A02B00A884F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE1AD33B20D6A02B00A884F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE3BE7137E4E9F6D200A2FC /* Pods-ReduxNotes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6CYEBJ9JW;
+				INFOPLIST_FILE = ReduxNotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.d9.ReduxNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE1AD33C20D6A02B00A884F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E44358C729EF128FD9C575CD /* Pods-ReduxNotes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6CYEBJ9JW;
+				INFOPLIST_FILE = ReduxNotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.d9.ReduxNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE1AD32320D6A02B00A884F0 /* Build configuration list for PBXProject "ReduxNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1AD33820D6A02B00A884F0 /* Debug */,
+				DE1AD33920D6A02B00A884F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE1AD33A20D6A02B00A884F0 /* Build configuration list for PBXNativeTarget "ReduxNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1AD33B20D6A02B00A884F0 /* Debug */,
+				DE1AD33C20D6A02B00A884F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE1AD32020D6A02B00A884F0 /* Project object */;
+}
